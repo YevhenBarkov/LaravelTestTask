@@ -5,7 +5,7 @@ Firstly, after downloading the application, you need to configure the database. 
 
 After that it is necessary to adjust the crontab by adding this line:
 
-* * * * * php /your-path-to/LaravelTest/artisan schedule:run >> /dev/null 2>&1
+"* * * * * php /your-path-to/LaravelTest/artisan schedule:run >> /dev/null 2>&1"
 
 Now in the folder public/html/ every 11 minutes a new xml document will be created.
 This document will contain information about user, their saved hashes, origin words and similar words from database.
