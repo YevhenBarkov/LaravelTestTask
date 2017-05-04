@@ -1,0 +1,70 @@
+body {
+    font: 16px/1.42857 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+header {
+    text-align: center;
+    background-color: #373737;
+    color: #fff;
+    height: 80px;
+    padding: 10px 50px;
+}
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #eee;
+    text-align: center;
+}
+
+nav {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    height: 56px;
+}
+
+nav ul li {
+    float:right;
+    margin-right:22px
+}
+.container{
+    width: 900px;
+    margin: auto;
+    padding: 10px;
+    background-color: #eee;
+}
+.right-part{
+    float: right;
+    width: 430px;
+    height: 200px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.left-part{
+    float: left;
+    width: 430px;
+    height: 200px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.bottom-part{
+    text-align: center;
+}
+.top-part{
+    margin: auto;
+    text-align: center;
+}
+
+select{
+    font-size: 17px;
+}
+#addWord{
+    font-size: 16px;
+}
+.errors{
+    text-align: center;
+    color: rgba(255, 0, 0, 0.8);
+}
