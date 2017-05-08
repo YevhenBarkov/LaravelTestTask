@@ -38,6 +38,19 @@ class TestController
         }
         return $forReturn;
     }
+    public function getSavedHashes($ip)
+    {
+        $data = Users::where('ip', $ip)->get();
+        $forReturn = [];
+        foreach ($data as $one) {
+            $forReturn [] = [
+                'id' => $one['id'],
+                'origin_words' => $one['origin_words'],
+                'hashes' => unserialize($one['saved_hashes'])
+            ];
+        }
+        return $forReturn;
+    }
 
     public function getLastUserHashes()
     {
