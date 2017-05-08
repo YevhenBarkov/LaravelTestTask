@@ -21,6 +21,7 @@ class TestController
     public function words()
     {
         $words = Vocabulary::all();
+
         return view('vocabulary', compact('words'));
 
     }
@@ -36,6 +37,7 @@ class TestController
                 'hashes' => unserialize($one['saved_hashes'])
             ];
         }
+
         return $forReturn;
     }
     public function getSavedHashes($ip)
@@ -49,6 +51,7 @@ class TestController
                 'hashes' => unserialize($one['saved_hashes'])
             ];
         }
+
         return $forReturn;
     }
 
@@ -62,6 +65,7 @@ class TestController
             'origin_words' => $data['origin_words'],
             'hashes' => unserialize($data['saved_hashes'])
         ];
+
         return $forReturn;
     }
 
@@ -148,6 +152,7 @@ class TestController
             $words = Vocabulary::all();
             return view('vocabulary', compact('words', 'errors'));
         }
+
         return view('result', compact('str', 'hashes'));
     }
 }

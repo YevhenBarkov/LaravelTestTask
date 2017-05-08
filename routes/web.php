@@ -17,8 +17,9 @@ use Illuminate\Support\Facades\Artisan;
 Route::get('/', 'Test\TestController@words');
 Route::get('/hash', 'Test\TestController@hash');
 Route::get('/getAllSavedHashes', 'Test\TestController@getAllUserHashes');
-Route::get('/getSavedHashes/{ip}', 'Test\TestController@getSavedHashes');
 Route::get('/getLastSavedHashes', 'Test\TestController@getLastUserHashes');
+
+Route::get('/getSavedHashes/{ip}', 'Test\TestController@getSavedHashes');
 
 Route::post('/save', 'Test\TestController@save');
 
